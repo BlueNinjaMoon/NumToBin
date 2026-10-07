@@ -15,11 +15,11 @@ def convert_to_newbase(num:int, newbase:int):
         num = num//newbase
     return Finalstr
 
-def oldbase_to_newbase(num:int, newbase:int):
+def oldbase_to_newbase(num:int, base:int):
     """Converts binary to decimal."""
     decimal = 0
     for digit in num:
-        decimal = decimal*newbase + int(digit)
+        decimal = decimal*base + int(digit)
     return decimal
 
 while True:
